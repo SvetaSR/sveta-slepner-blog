@@ -1,0 +1,28 @@
+{
+  "name": "sveta-slepner-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gatsby": "^5.5.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^6.5.0",
+    "gatsby-source-filesystem": "^5.5.0",
+    "gatsby-transformer-remark": "^6.5.0",
+    "react": "^18.2.0",
+    "react-day-and-night-toggle": "^1.0.18",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.6"
+  }
+}
