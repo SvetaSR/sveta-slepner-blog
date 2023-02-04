@@ -15,12 +15,12 @@ export const Header = ({ isDarkMode, setIsDarkMode }) => {
         </Link>
       </nav>
       <RightSlot>
-        <Link to="/rss.xml" title="RSS feed">
+        <a href="https://svetaslepner.com/rss.xml" title="RSS feed" target="_blank" rel="noreferrer">
           <img
             src="https://res.cloudinary.com/dq6tqnvbh/image/upload/w_25/v1675529799/blog/social_style_3_rss-512-1.png"
             alt="rss feed"
           />
-        </Link>
+        </a>
         <DayNightToggle
           onChange={setIsDarkMode}
           checked={isDarkMode}
