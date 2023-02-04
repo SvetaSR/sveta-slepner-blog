@@ -1,7 +1,0 @@
-# Project dependencies
-node_modules
-.cache/
-# Build directory
-public/
-static/admin/*.bundle.*
-.DS_Store
