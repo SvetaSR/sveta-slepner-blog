@@ -32,7 +32,24 @@ export const pageQuery = graphql`
         description
         timeToRead
         tags
+        canonical
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }
 `;
+
+export const Head = ({ data }) => {
+  const {title, description, canonical} = data.markdownRemark.frontmatter;
+  return <>
+    <html lang="en" />
+    <title>{data.site.siteMetadata.title} | {title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    {canonical && <meta property="og:url" content={canonical} />}
+  </>
+}

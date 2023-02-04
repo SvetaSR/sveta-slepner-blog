@@ -10,6 +10,7 @@ tags:
   - interview tips
   - react
 slug: 2021-01-02-the-complete-guide-to-front-end-developer-interviews
+canonical: https://medium.com/gitconnected/the-complete-guide-to-front-end-developer-interviews-e2f0f611c91e
 ---
 ![chemex](https://res.cloudinary.com/dq6tqnvbh/image/upload/w_900,q_auto/v1675543987/blog/1_2Acp2-iKTTMeBiDJehnYKA.jpg)
 

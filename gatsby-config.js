@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: `https://www.svetaslepner.com`,
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-source-filesystem",
