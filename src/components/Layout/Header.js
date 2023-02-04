@@ -1,26 +1,32 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Wrapper } from "./Header.styles";
+import { HeaderWrapper, RightSlot } from "./Header.styles";
 import DayNightToggle from "react-day-and-night-toggle";
 
 export const Header = ({ isDarkMode, setIsDarkMode }) => {
   return (
-    <Wrapper>
+    <HeaderWrapper>
       <nav>
         <Link to="/" title="Blog">
-        Blog
+          Blog
         </Link>
-        <Link to="/about-me" title="About me">
-          About me
+        <Link to="/about" title="About">
+          About
         </Link>
       </nav>
-      <div>
+      <RightSlot>
+        <Link to="/rss.xml" title="RSS feed">
+          <img
+            src="https://res.cloudinary.com/dq6tqnvbh/image/upload/w_25/v1675529799/blog/social_style_3_rss-512-1.png"
+            alt="rss feed"
+          />
+        </Link>
         <DayNightToggle
-          onChange={() => setIsDarkMode(!isDarkMode)}
+          onChange={setIsDarkMode}
           checked={isDarkMode}
           size={24}
         />
-      </div>
-    </Wrapper>
+      </RightSlot>
+    </HeaderWrapper>
   );
 };

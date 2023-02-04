@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { withPrefix } from "gatsby";
 import { ThemeProvider } from "styled-components";
 import { Helmet } from "react-helmet";
-import { theme, darkTheme } from "../../theme";
+import { useThemeSwitcher } from "../../hooks/themeSwitcher";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { GlobalStyles, MainWrapper, Content } from "./Layout.styles";
@@ -10,10 +10,10 @@ import useSiteMetadata from "./SiteMetadata";
 
 export const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { isDarkMode, toggleIsDarkMode, theme } = useThemeSwitcher();
 
   return (
-    <ThemeProvider theme={isDarkMode ? darkTheme : theme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <MainWrapper>
         <Helmet>
@@ -54,7 +54,7 @@ export const Layout = ({ children }) => {
             content={`${withPrefix("/")}img/og-image.jpg`}
           />
         </Helmet>
-        <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+        <Header isDarkMode={isDarkMode} setIsDarkMode={toggleIsDarkMode} />
         <Content>{children}</Content>
         <Footer />
       </MainWrapper>

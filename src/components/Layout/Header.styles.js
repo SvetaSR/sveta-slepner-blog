@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   padding: 0 1rem;
   position: sticky;
   top: 0;
@@ -18,6 +18,10 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 4rem;
+
+    @media (max-width: 400px) {
+      gap: 3rem;
+    }
   }
   
   a, a:active, a:visited {
@@ -41,3 +45,13 @@ export const Wrapper = styled.div`
   }
 
 `;
+
+export const RightSlot = styled.div`
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+
+  img {
+    vertical-align: middle;
+  }
+`

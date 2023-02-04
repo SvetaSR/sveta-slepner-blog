@@ -5,12 +5,34 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     background: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.color};
-    transition: background 0.5s linear;    
     height: 100%;
+  }
 
-    a, p, h1 {
-        transition: color 0.5s linear;
+  p {
+    a, a:visited, a:active {
+        color: ${({ theme }) => theme.color};
     }
+    a:hover {
+        color: ${({ theme }) => theme.hightlight};
+    }
+  }
+  
+  ol, ul {
+    margin: 0;
+    padding-inline-start: 20px;
+  }
+
+  h2 {
+    margin: 2rem 0 0 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  pre span {
+    font-size: 1rem;
+    font-family: 'Source Code Pro', monospace;
   }
 `;
 
@@ -19,6 +41,9 @@ export const MainWrapper = styled.div`
   max-width: 900px;
   margin: 0 auto;
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Content = styled.div`
