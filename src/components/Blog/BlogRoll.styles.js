@@ -28,8 +28,6 @@ export const ArticleTitle = styled.h2`
 `;
 
 export const ArticleContent = styled.div`
-  width: 70%;
-  flex-shrink: 0;
   padding: 1rem 0;
   gap: 1rem;
   display: flex;

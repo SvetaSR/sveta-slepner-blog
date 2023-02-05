@@ -25,7 +25,7 @@ The reason why working with 3D for a web developer might be confusing at first, 
 
 If for instance, someone tells you, the web developer, to render a red box, I bet what you have in mind is “ok, I’ll create a div, use some CSS to size, place, and color it”. Pretty straightforward.
 
-![A simple red box created with css](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oeay6m95y897qsfyxtya.jpg)
+![A simple red box created with css](https://res.cloudinary.com/dq6tqnvbh/image/upload/q_auto/v1675620900/blog/oeay6m95y897qsfyxtya.jpg)
 
 However, to do the same in 3D will require you to:
 A. Create something called a “scene”
@@ -65,14 +65,14 @@ scene.add(directionalLight);
 And just like we might have multiple stage sets in our theatre, each showing a different play, we can create multiple scenes and switch between them, or render them simultaneously.
 
 
-![Origin: https://threejs.org/examples/?q=camera#webgl_camera](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pw4y7z0n129w1r0u2rbf.png)\
+![Origin: https://threejs.org/examples/?q=camera#webgl_camera](https://res.cloudinary.com/dq6tqnvbh/image/upload/q_auto/v1675620953/blog/pw4y7z0n129w1r0u2rbf.png)\
 Source: [https://threejs.org/examples/?q=camera#webgl_camera](https://threejs.org/examples/?q=camera#webgl_camera)
 
 
 ## 3D geometry
 A 3D geometry is basically a set of instructions for “how to create a 3D shape”. It consists of faces, edges, and vertices.
 
-![Source: https://en.wikipedia.org/wiki/Polygon_mesh](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/aotqw33lcr8ny85jeaap.jpg)\
+![Source: https://en.wikipedia.org/wiki/Polygon_mesh](https://res.cloudinary.com/dq6tqnvbh/image/upload/q_auto/v1675620993/blog/aotqw33lcr8ny85jeaap.jpg)\
 Source: [https://en.wikipedia.org/wiki/Polygon_mesh](https://en.wikipedia.org/wiki/Polygon_mesh)
 
 Luckily, three.js provides us with some built-in geometry classes, such as BoxGeometry, SphereGeometry, CylinderGeometry, and so on.
@@ -86,7 +86,7 @@ const geometry = new THREE.BoxGeometry(10, 10, 10);
 ```
 
 
-![3D Shapes](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/u60eiyzo4iutp3412tt0.jpg)\
+![3D Shapes](https://res.cloudinary.com/dq6tqnvbh/image/upload/q_auto/v1675621050/blog/u60eiyzo4iutp3412tt0.jpg)\
 Source: [https://en.wikipedia.org/wiki/Shape](https://en.wikipedia.org/wiki/Shape)
 
 In case you’re not happy with the existing geometries or need to create your own geometry classes, it is very possible. You can see some examples provided by three.js [here](https://github.com/mrdoob/three.js/tree/dev/examples/jsm/geometries).
@@ -108,7 +108,7 @@ Texture maps are also worth mentioning. These are image files that can be used t
 
 
 ![Multiple texture maps are used to define the realistic texture of a ball of grass and soil
-](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/b27krogq9u1118elpxrn.png)
+](https://res.cloudinary.com/dq6tqnvbh/image/upload/q_auto/v1675621075/blog/b27krogq9u1118elpxrn.png)
 Multiple texture maps are used to define the realistic texture of a ball of grass and soil
 
 
@@ -116,7 +116,7 @@ Multiple texture maps are used to define the realistic texture of a ball of gras
 A mesh is an object representing part of the model. It contains a geometry and its material. A 3D model can be constructed from multiple meshes.
 
 
-![Each highlighted part is a mesh. All meshes combined define the model](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/v2nwokb79anw1jlq9i6r.png)\
+![Each highlighted part is a mesh. All meshes combined define the model](https://res.cloudinary.com/dq6tqnvbh/image/upload/q_auto/v1675621104/blog/v2nwokb79anw1jlq9i6r.png)\
 Each highlighted part is a mesh. All meshes combined define the model.
 
 ```javascript
@@ -175,7 +175,7 @@ const perspectiveCamera = new THREE.PerspectiveCamera(
 ```
 
 
-![A frustrum](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qxp2h5xggokj4f0z8ijc.png)
+![A frustrum](https://res.cloudinary.com/dq6tqnvbh/image/upload/q_auto/v1675621129/blog/qxp2h5xggokj4f0z8ijc.png)
 
 There are multiple types of cameras in three.js, but the two most useful ones are the perspective camera and the orthographic camera.
 
@@ -184,7 +184,7 @@ There are multiple types of cameras in three.js, but the two most useful ones ar
 **Orthographic camera** — With the orthographic camera, there is no depth perception, so no matter where the object is placed in the scene, it will look the same size. This is useful for isometric games, for instance.
 
 
-![An isometric video game using an orthographic camera](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/joh2at2p15rxzdi0bsip.png)\
+![An isometric video game using an orthographic camera](https://res.cloudinary.com/dq6tqnvbh/image/upload/q_auto/v1675621196/blog/joh2at2p15rxzdi0bsip.png)\
 An isometric video game using an orthographic camera
 
 <iframe src="https://codesandbox.io/embed/orthographic-and-perspective-fd99jm?fontsize=14&hidenavigation=1&theme=dark"
@@ -304,7 +304,7 @@ This is also required to support loaded 3D files which come with their own anima
 
 
 ![Animation loop from file
-](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/d637v24968sx2spc1l80.gif)
+](https://res.cloudinary.com/dq6tqnvbh/image/upload/v1675621226/blog/d637v24968sx2spc1l80.gif)
 
 
 ## Camera controls

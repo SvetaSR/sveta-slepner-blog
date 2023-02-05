@@ -1,7 +1,8 @@
 import React from "react";
+import { graphql } from "gatsby";
 import { Layout } from "../components/Layout/Layout";
 import { BlogRoll } from "../components/Blog/BlogRoll";
-import { graphql } from "gatsby";
+import favicon from '../static/favicon.ico';
 
 const IndexPage = ({ data }) => {
   return (
@@ -15,6 +16,11 @@ export default IndexPage;
 
 export const indexPageQuery = graphql`
   query BlogRollQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
@@ -33,3 +39,13 @@ export const indexPageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ data }) => {
+  return (
+    <>
+      <html lang="en" />
+      <meta name="icon" type="image/x-icon" href={favicon} />
+      <title>{data.site.siteMetadata.title}</title>
+    </>
+  );
+};

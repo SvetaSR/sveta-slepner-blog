@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby";
 import { Layout } from "../components/Layout/Layout";
 import { PageTitle } from "../components/Layout/General.styles";
 import { BlogRoll } from "../components/Blog/BlogRoll";
+import favicon from '../static/favicon.ico';
 
 const StyledPageTitle = styled(PageTitle)`
   margin-bottom: 0.5rem;
@@ -71,3 +72,11 @@ export const tagPageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ data, pageContext }) => {
+  return <>
+    <html lang="en" />
+    <meta name="icon" type="image/x-icon" href={favicon} />
+    <title>{`${data.site.siteMetadata.title} | #${pageContext.tag}`}</title>
+  </>
+}

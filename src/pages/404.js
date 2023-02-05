@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "gatsby";
+import { graphql, Link } from "gatsby";
 import styled, { ThemeProvider } from "styled-components";
 import { useThemeSwitcher } from "../hooks/themeSwitcher";
 import { GlobalStyles } from "../components/Layout/Layout.styles";
+import favicon from '../static/favicon.ico';
 
 const PageWrapper = styled.div`
   width: 100%;
@@ -63,3 +64,23 @@ const PageNotFound = () => {
 };
 
 export default PageNotFound;
+
+export const pageNotFoundPageQuery = graphql`
+  query BlogRollQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
+
+export const Head = ({ data }) => {
+  return (
+    <>
+      <html lang="en" />
+      <meta name="icon" type="image/x-icon" href={favicon} />
+      <title>{`${data.site.siteMetadata.title} | 404 Not found`}</title>
+    </>
+  );
+};

@@ -1,7 +1,9 @@
+import { graphql } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 import { PageTitle } from "../components/Layout/General.styles";
 import { Layout } from "../components/Layout/Layout";
+import favicon from '../static/favicon.ico';
 
 const ContentWrapper = styled.article`
   display: flex;
@@ -106,3 +108,23 @@ const AboutMePage = () => {
 };
 
 export default AboutMePage;
+
+export const aboutMePageQuery = graphql`
+  query BlogRollQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
+
+export const Head = ({ data }) => {
+  return (
+    <>
+      <html lang="en" />
+      <meta name="icon" type="image/x-icon" href={favicon} />
+      <title>{`${data.site.siteMetadata.title} | About me`}</title>
+    </>
+  );
+};

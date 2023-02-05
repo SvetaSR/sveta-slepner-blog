@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Layout } from "../components/Layout/Layout";
 import { BlogPost } from "../components/Blog/BlogPost";
+import favicon from '../static/favicon.ico';
 
 const BlogPostTemplate = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -47,7 +48,8 @@ export const Head = ({ data }) => {
   const {title, description, canonical} = data.markdownRemark.frontmatter;
   return <>
     <html lang="en" />
-    <title>{data.site.siteMetadata.title} | {title}</title>
+    <meta name="icon" type="image/x-icon" href={favicon} />
+    <title>{`${data.site.siteMetadata.title} | ${title}`}</title>
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     {canonical && <meta property="og:url" content={canonical} />}
