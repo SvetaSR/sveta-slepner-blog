@@ -76,7 +76,7 @@ export const tagPageQuery = graphql`
 export const Head = ({ data, pageContext }) => {
   return <>
     <html lang="en" />
-    <meta name="icon" type="image/x-icon" href={favicon} />
+    <meta name="icon" rel="icon" type="image/x-icon" href={favicon} />
     <title>{`${data.site.siteMetadata.title} | #${pageContext.tag}`}</title>
   </>
 }

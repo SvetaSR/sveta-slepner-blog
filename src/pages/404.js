@@ -4,6 +4,8 @@ import styled, { ThemeProvider } from "styled-components";
 import { useThemeSwitcher } from "../hooks/themeSwitcher";
 import { GlobalStyles } from "../components/Layout/Layout.styles";
 import favicon from '../static/favicon.ico';
+import chrome192 from '../static/android-chrome-192x192.png';
+import chrome512 from '../static/android-chrome-512x512.png';
 
 const PageWrapper = styled.div`
   width: 100%;
@@ -79,7 +81,9 @@ export const Head = ({ data }) => {
   return (
     <>
       <html lang="en" />
-      <meta name="icon" type="image/x-icon" href={favicon} />
+      <link rel="icon" type="image/x-icon" href={favicon} />
+      <link rel="icon" href={chrome192} sizes="196x196" type="image/png" />
+      <link rel="icon" href={chrome512} sizes="512x512" type="image/png" />
       <title>{`${data.site.siteMetadata.title} | 404 Not found`}</title>
     </>
   );

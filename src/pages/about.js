@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { PageTitle } from "../components/Layout/General.styles";
 import { Layout } from "../components/Layout/Layout";
 import favicon from '../static/favicon.ico';
+import chrome192 from '../static/android-chrome-192x192.png';
+import chrome512 from '../static/android-chrome-512x512.png';
 
 const ContentWrapper = styled.article`
   display: flex;
@@ -123,7 +125,9 @@ export const Head = ({ data }) => {
   return (
     <>
       <html lang="en" />
-      <meta name="icon" type="image/x-icon" href={favicon} />
+      <link rel="icon" type="image/x-icon" href={favicon} />
+      <link rel="icon" href={chrome192} sizes="196x196" type="image/png" />
+      <link rel="icon" href={chrome512} sizes="512x512" type="image/png" />
       <title>{`${data.site.siteMetadata.title} | About me`}</title>
     </>
   );

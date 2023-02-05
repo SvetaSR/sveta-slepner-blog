@@ -48,7 +48,7 @@ export const Head = ({ data }) => {
   const {title, description, canonical} = data.markdownRemark.frontmatter;
   return <>
     <html lang="en" />
-    <meta name="icon" type="image/x-icon" href={favicon} />
+    <meta name="icon" rel="icon" type="image/x-icon" href={favicon} />
     <title>{`${data.site.siteMetadata.title} | ${title}`}</title>
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />

@@ -14,7 +14,7 @@ export const Article = styled.article`
 `;
 
 export const ArticleTitle = styled.h2`
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0;
   font-family: ${({ theme }) => theme.articleTitleFont};
 
@@ -39,8 +39,8 @@ export const ArticleContent = styled.div`
 `;
 
 export const ArticleSummery = styled.div`
-  line-height: 1.5;
-  font-size: 1.2rem;
+  line-height: 1.6;
+  font-size: 1rem;
   font-family: ${({ theme }) => theme.paragraphFont};
 `;
 

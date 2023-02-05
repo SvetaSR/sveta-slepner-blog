@@ -2,7 +2,7 @@
 title: The Complete Guide to Front-end Developer Interviews
 timeToRead: 6
 date: 2021-01-02T15:04:10.000Z
-featuredimage: https://res.cloudinary.com/dq6tqnvbh/image/upload/w_260,h_400,q_auto,g_face,c_thumb,z_0.1/v1675543987/blog/1_2Acp2-iKTTMeBiDJehnYKA.jpg
+featuredimage: https://res.cloudinary.com/dq6tqnvbh/image/upload/w_260,h_350,q_auto,g_face,c_thumb,z_0.1/v1675543987/blog/1_2Acp2-iKTTMeBiDJehnYKA.jpg
 description: Interviews are hard, especially technical interviews where you’re expected to think, solve, and analyze all while the interviewer stares at you. But what people don’t realize is that being interviewed is basically just another skill, and skills can be honed with the right information and practice.
 tags:
   - javascript
