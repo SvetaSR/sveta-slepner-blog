@@ -93,10 +93,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        trackingId: "G-KBHNW86DSF",
-        head: false,
+        id: "G-KBHNW86DSF",
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: "gatsby" },
         enableWebVitalsTracking: true,
       },
     },
