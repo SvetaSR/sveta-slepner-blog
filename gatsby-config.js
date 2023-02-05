@@ -92,5 +92,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-KBHNW86DSF",
+        head: false,
+        enableWebVitalsTracking: true,
+      },
+    },
   ],
 };
