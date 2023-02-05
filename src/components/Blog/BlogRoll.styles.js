@@ -42,6 +42,13 @@ export const ArticleSummery = styled.div`
   line-height: 1.6;
   font-size: 1rem;
   font-family: ${({ theme }) => theme.paragraphFont};
+
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; 
+  white-space: pre-wrap;   
 `;
 
 export const ArticleImage = styled.div`

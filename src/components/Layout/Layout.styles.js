@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: ${({ theme }) => theme.articleTitleFont}
   }
 
-  p {
+  p, li {
     a, a:visited, a:active {
         color: ${({ theme }) => theme.color};
     }
