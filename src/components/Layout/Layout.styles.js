@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.color};
     height: 100%;
+    font-family: ${({ theme }) => theme.articleTitleFont}
   }
 
   p {

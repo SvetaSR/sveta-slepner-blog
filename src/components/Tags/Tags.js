@@ -7,6 +7,7 @@ const TagsWrapper = styled.div`
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
+  flex-flow: wrap;
 `;
 
 const Tag = styled(Link)`

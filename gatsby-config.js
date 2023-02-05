@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
     title: `Sveta Slepner's Blog`,
-    siteUrl: `https://www.svetaslepner.com`,
+    siteUrl: `https://svetaslepner.com`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -29,6 +29,14 @@ module.exports = {
             theme: 'Default Dark+'
           }
         }]
+      }
+    },
+    "gatsby-plugin-sitemap",
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://svetaslepner.com',
+        sitemap: 'https://svetaslepner.com/sitemap-index.xml',
       }
     },
     {
