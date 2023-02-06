@@ -21,6 +21,9 @@ export const GlobalStyles = createGlobalStyle`
   ol, ul {
     margin: 0;
     padding-inline-start: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   h2 {
@@ -34,6 +37,14 @@ export const GlobalStyles = createGlobalStyle`
   pre span {
     font-size: 1rem;
     font-family: 'Source Code Pro', monospace;
+  }
+
+  code:not([class]) {
+    background: ${({ theme }) => theme.tagsBackgroundColor };
+    padding: 3px 4px;
+    margin: 0 2px;
+    font-family: 'Source Code Pro', monospace;
+    color: rgba(0,0,0,.84);
   }
 `;
 
