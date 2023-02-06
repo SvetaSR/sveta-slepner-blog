@@ -1,7 +1,7 @@
 ---
 title: GitHub Actions - A Beginner's Guide to Automating Your Development Process
 timeToRead: 13
-date: 2023-02-07T00:00:00.000Z
+date: 2023-02-06T00:00:00.000Z
 featuredimage: https://res.cloudinary.com/dq6tqnvbh/image/upload/w_900,q_auto/v1675634450/blog/github-actions-2.jpg
 description: Whether you want to create a CI/CD pipeline or automate GitHub-related flows like opening a PR, adding automated comments, or sending a Slack notification each time someone merges a commit to master, GitHub Actions can help you create these processes and save you time and effort. And the best part is how straightforward it is!
 tags:
@@ -9,7 +9,7 @@ tags:
   - github actions
   - automation
   - devops
-slug: 2023-02-07-github-actions-a-beginners-guide-to-automating-your-development-process
+slug: 2023-02-06-github-actions-a-beginners-guide-to-automating-your-development-process
 ---
 ![chemex](https://res.cloudinary.com/dq6tqnvbh/image/upload/w_900,q_auto/v1675634450/blog/github-actions-2.jpg)
 
