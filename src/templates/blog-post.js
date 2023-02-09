@@ -53,5 +53,6 @@ export const Head = ({ data }) => {
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     {canonical && <meta property="og:url" content={canonical} />}
+    {canonical && <link rel="canonical" href={canonical} />}
   </>
 }
