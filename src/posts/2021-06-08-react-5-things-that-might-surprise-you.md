@@ -3,7 +3,7 @@ title: React — 5 Things That Might Surprise You
 timeToRead: 7
 date: 2021-06-08T11:00:00.000Z
 featuredimage: https://res.cloudinary.com/dq6tqnvbh/image/upload/w_900,q_auto/v1675946414/blog/5-react.jpg
-description: The ability to render 3D objects in the browser opens up many exciting possibilities for creating interactive experiences. Whether you’re looking for a new way to showcase products on your e-commerce site, creating stunning landing pages, or maybe even developing a game.
+description: The React library is pretty straightforward and is relatively easy to get into, especially with the wide variety of materials that exist to help you learn it. But every tool has its share of tricks or issues that these tutorials usually don’t cover. You get to learn them when someone reviews your code, or worse — when you’re facing a problem and are desperate to find a solution. Hopefully, with this article, I might reveal some of these things about React, and maybe even surprise you!
 tags:
   - javascript
   - react
