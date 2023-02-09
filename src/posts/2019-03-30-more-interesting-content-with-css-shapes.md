@@ -5,8 +5,7 @@ date: 2019-03-30T10:00:00.000Z
 featuredimage: https://res.cloudinary.com/dq6tqnvbh/image/upload/w_900,q_auto/v1675974296/blog/css-shapes-header.jpg
 description: For the longest time newspapers, magazines and books had one advantage over content designed for websites. It’s rather a small feature, but one that makes content look so much better — the ability to wrap text around images and shapes other than a rectangle. But fear not, because with the help of a CSS feature called ‘CSS shapes’, you can now achieve that as well!
 tags:
-  - javascript
-  - react
+  - css
   - frontend development
   - web development
 slug: 2019-03-30-more-interesting-content-with-css-shapes
