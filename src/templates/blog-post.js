@@ -52,7 +52,6 @@ export const Head = ({ data }) => {
     <title>{`${data.site.siteMetadata.title} | ${title}`}</title>
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
-    {canonical && <meta property="og:url" content={canonical} />}
     {canonical && <link rel="canonical" href={canonical} />}
   </>
 }
