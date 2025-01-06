@@ -2,7 +2,7 @@
 title: 7 Ways I'm Utilizing the Power of AI as a Front-end Developer
 timeToRead: 5
 date: 2025-01-06T00:00:00.000Z
-featuredimage: https://res.cloudinary.com/dqsubx7oc/image/upload/w_900,h_600,q_auto,c_thumb/v1736189636/banner_article_ai.webp
+featuredimage: https://res.cloudinary.com/dq6tqnvbh/image/upload/w_900,h_600,q_auto,c_thumb/v1736193263/blog/banner_article_ai.webp
 description: Discover how AI tools like ChatGPT are transforming front-end development, from generating code layouts to writing tests and fixing TypeScript errors. Learn practical tips, example prompts, and a friendly reminder that AI is an assistant, not a replacement for your coding skills.
 tags:
   - ai
@@ -11,7 +11,7 @@ tags:
   - frontend development
 slug: 2025-01-06-7-ways-im-utilizing-the-power-of-ai-as-a-front-end-developer
 ---
-![chemex](https://res.cloudinary.com/dqsubx7oc/image/upload/w_900,h_600,q_auto,c_thumb/v1736189636/banner_article_ai.webp)
+![chemex](https://res.cloudinary.com/dq6tqnvbh/image/upload/w_900,h_600,q_auto,c_thumb/v1736193263/blog/banner_article_ai.webp)
 
 It's hard to believe Chat GPT was introduced to our lives merely two years ago. I'm old enough to remember how Google revolutionized my Internet use, but no other technology has disrupted the industry to such an extent since then. As a front-end developer, I’ve embraced tools like ChatGPT and its competitors (looking at you, Claude) to make my day-to-day work more efficient. So now, I would like to share some ways I’ve been using it with you.
 
@@ -102,7 +102,7 @@ AI can help you with some of that, and give you suggestions for improving access
 
 ## Simplifying Code
 My code writing style involves throwing everything on my mind into the IDE. Once the code works, I start a cleanup. I consolidate code, rename variables, and move functions around.
-Also, I believe in KISS, so that "future me/colleague" can read my code and understand it without too much hassle (and too many comments).
+Also, I believe in KISS (keep it stupid simple), so that "future me/colleague" can read my code and understand it without too much hassle (and too many comments).
 Using AI allows me to make some shortcuts in that process, provide it with complex code, and ask it to simplify it.
 
 **Example prompts:**<br/>
