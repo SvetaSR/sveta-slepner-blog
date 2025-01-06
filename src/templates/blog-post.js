@@ -53,6 +53,5 @@ export const Head = ({ data }) => {
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     {canonical && <link rel="canonical" href={canonical} />}
-    <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4feb40a9342a7880"></script>
   </>
 }
