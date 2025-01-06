@@ -17,13 +17,10 @@ importers:
       gatsby-plugin-feed:
         specifier: ^5.14.0
         version: 5.14.0(gatsby@5.14.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.7.2))(graphql@16.10.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      gatsby-plugin-google-analytics:
-        specifier: ^5.14.0
-        version: 5.14.0(gatsby@5.14.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.7.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       gatsby-plugin-google-fonts:
         specifier: ^1.0.1
         version: 1.0.1
-      gatsby-plugin-google-tagmanager:
+      gatsby-plugin-google-gtag:
         specifier: ^5.14.0
         version: 5.14.0(gatsby@5.14.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.7.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       gatsby-plugin-robots-txt:
@@ -3083,19 +3080,11 @@ packages:
       react: ^18.0.0 || ^0.0.0
       react-dom: ^18.0.0 || ^0.0.0
 
-  gatsby-plugin-google-analytics@5.14.0:
-    resolution: {integrity: sha512-mzUXk+0nmRKYJilKtZFaajO05MYM1aDd3LkJYDH7kDhgiiAjHo9n404n3I2D7/3G7ikxmlY31zg7y6EsIzZX7w==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      gatsby: ^5.0.0-next
-      react: ^18.0.0 || ^0.0.0
-      react-dom: ^18.0.0 || ^0.0.0
-
   gatsby-plugin-google-fonts@1.0.1:
     resolution: {integrity: sha512-p1NVkn27GUnDA5qHM+Z4cCcLCJIardzZXMon3640sT4xuL/AZJbsx3HEt2KY/5oZu0UXIkytkxzV2Da4rQeUIg==}
 
-  gatsby-plugin-google-tagmanager@5.14.0:
-    resolution: {integrity: sha512-ob74OE2vfpOANl8eIuO/2Ohbt1QQWZjUmg1BtEy0r8OpCsyRwv6GXqJFiTcB0cz92WUCAkysvhnaIaFC6BpZcw==}
+  gatsby-plugin-google-gtag@5.14.0:
+    resolution: {integrity: sha512-iXBQR4xjU20vR1b0zSE1McDxJZdm3pNxm8FMSvFIa9IswZskRgnjSYUBjGLMeGf8+t8y8rSTie94Ni0pJqf6dA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       gatsby: ^5.0.0-next
@@ -5987,9 +5976,6 @@ packages:
 
   web-namespaces@1.1.4:
     resolution: {integrity: sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==}
-
-  web-vitals@1.1.2:
-    resolution: {integrity: sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig==}
 
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
@@ -10066,24 +10052,15 @@ snapshots:
     transitivePeerDependencies:
       - graphql
 
-  gatsby-plugin-google-analytics@5.14.0(gatsby@5.14.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.7.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  gatsby-plugin-google-fonts@1.0.1: {}
+
+  gatsby-plugin-google-gtag@5.14.0(gatsby@5.14.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.7.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.26.0
       gatsby: 5.14.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.7.2)
       minimatch: 3.1.2
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      web-vitals: 1.1.2
-
-  gatsby-plugin-google-fonts@1.0.1: {}
-
-  gatsby-plugin-google-tagmanager@5.14.0(gatsby@5.14.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.7.2))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      '@babel/runtime': 7.26.0
-      gatsby: 5.14.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.7.2)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      web-vitals: 1.1.2
 
   gatsby-plugin-page-creator@5.14.0(gatsby@5.14.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@0.21.3)(typescript@5.7.2))(graphql@16.10.0):
     dependencies:
@@ -13482,8 +13459,6 @@ snapshots:
   weak-lru-cache@1.2.2: {}
 
   web-namespaces@1.1.4: {}
-
-  web-vitals@1.1.2: {}
 
   webidl-conversions@3.0.1: {}
 
